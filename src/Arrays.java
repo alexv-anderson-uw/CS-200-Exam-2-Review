@@ -1,7 +1,7 @@
 /**
  * Suggestion: Stick to 1-D arrays. Creation, initialization, mutation.
  * 
- * @author 
+ * @author Ray
  */
 
 public class Arrays {

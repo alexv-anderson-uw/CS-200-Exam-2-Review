@@ -1,7 +1,7 @@
 /**
  * Suggestion: Initialize with and with out seed to seed and using nextInt(int)
  * 
- * @author 
+ * @author TJ
  */
 
 public class Random {

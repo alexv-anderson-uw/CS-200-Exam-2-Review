@@ -1,7 +1,7 @@
 /**
  * Suggestion: Printing triangles or patterns
  * 
- * @author 
+ * @author Alex
  */
 
 public class NestedLoop {

@@ -1,7 +1,7 @@
 /**
  * Suggestion: Initializing and mutating an ArrayList
  * 
- * @author 
+ * @author Nikhil
  */
 
 public class ArrayList {

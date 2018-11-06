@@ -1,7 +1,7 @@
 /**
  * Suggestion: Highlight the differences between references and primitives using methods. 
  * 
- * @author 
+ * @author Alex
  */
 
 public class RefVsPrim {

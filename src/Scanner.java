@@ -1,7 +1,7 @@
 /**
  * Suggestion: Demonstrate using and passing a scanner to check user input.
  * 
- * @author 
+ * @author Ray
  */
 
 public class Scanner {

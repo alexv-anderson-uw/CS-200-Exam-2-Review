@@ -1,7 +1,7 @@
 /**
  * Suggestion: Handle checked and runtime exceptions
  * 
- * @author 
+ * @author Alex
  */
 
 public class Exceptions {

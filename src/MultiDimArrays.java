@@ -1,7 +1,7 @@
 /**
  * Suggestion: Creating, initializing, mutating, or printing jagged arrays
  * 
- * @author 
+ * @author TJ
  */
 
 public class MultiDimArrays {

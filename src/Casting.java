@@ -1,7 +1,7 @@
 /**
  * Suggestion: Demonstrate up/down casting and casting when contacting primitives with String
  * 
- * @author 
+ * @author Alex
  */
 
 public class Casting {

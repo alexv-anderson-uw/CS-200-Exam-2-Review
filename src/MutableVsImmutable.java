@@ -1,7 +1,7 @@
 /**
  * Suggestion: Contrast arrays with Strings?
  * 
- * @author 
+ * @author Alex
  */
 
 public class MutableVsImmutable {

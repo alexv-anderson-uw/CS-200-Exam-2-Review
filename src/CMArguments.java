@@ -1,7 +1,7 @@
 /**
  * Suggestion: Access and print command-line arguments
  * 
- * @author 
+ * @author Mark
  */
 
 public class CMArguments {
