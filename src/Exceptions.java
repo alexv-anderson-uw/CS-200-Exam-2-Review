@@ -1,7 +1,7 @@
 /**
- * Suggestion: Handle checked and runtime exceptions
+ * Suggestion: Handle checked and runtime exceptions. Diagnose error based on stacktrace
  * 
- * @author Alex
+ * @author Mark
  */
 
 public class Exceptions {
