@@ -18,12 +18,9 @@ public class CMArguments {
 	public static void main(String[] args) {
 		
 		//Note: the args parameter is empty if no parameters are given
-		if(args.length == 0)
-		{
+		if(args.length == 0) {
 			System.out.println("No command line arguments were passed");
-		}
-		else
-		{
+		} else {
 			System.out.println(args.length + " command line arguments were passed");
 			System.out.println(Arrays.toString(args));
 		}

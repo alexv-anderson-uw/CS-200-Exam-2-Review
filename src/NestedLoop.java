@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Nested Loops
  * 
@@ -7,9 +9,6 @@
  * 
  * @author Alex
  */
-
-import java.util.Scanner;
-
 public class NestedLoop {
 
 	/**
@@ -21,8 +20,7 @@ public class NestedLoop {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("Enter the triangle's height: ");
-		if(!scanner.hasNextInt())
-		{
+		if(!scanner.hasNextInt()) {
 			// Don't accept bad input
 			System.out.println("Expected a number. Goodbye.");
 			return;
@@ -31,11 +29,10 @@ public class NestedLoop {
 		int height = scanner.nextInt();
 		scanner.nextLine();
 		
-		for(int rowNum = 0; rowNum < height; rowNum++)	// For each row
-		{
+		for(int rowNum = 0; rowNum < height; rowNum++) { // For each row 
+			
 			// Note: the program stops once the number of columns exceeds the number of rows
-			for(int columnNum = 0; columnNum <= rowNum; columnNum++)  // For each column in the row
-			{
+			for(int columnNum = 0; columnNum <= rowNum; columnNum++) {  // For each column in the row
 				System.out.print("*");
 			}
 			
