@@ -12,6 +12,11 @@ import java.util.Scanner;
 
 public class NestedLoop {
 
+	/**
+	 * Demonstrates how nested loops can be used to draw a 2 dimensional
+	 *    figure.
+	 * @param args An array of command line arguments
+	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		

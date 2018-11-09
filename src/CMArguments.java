@@ -7,11 +7,14 @@
  * 
  * @author Alex
  */
-
 import java.util.Arrays;
 
 public class CMArguments {
 
+	/**
+	 * Demonstrates how command line arguements can be accessed.
+	 * @param args An array of command line arguments
+	 */
 	public static void main(String[] args) {
 		
 		//Note: the args parameter is empty if no parameters are given

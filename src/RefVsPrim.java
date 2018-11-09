@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * References vs Primitives
  * 
@@ -11,38 +13,48 @@
  *     on the heap. Since the data is stored on the heap, the data can be accessed
  *     and/or affected by other methods who also have a reference to that location
  *     in memory. How a reference variable behaves depends on the data that it
- *     refers to (see below for examples).
+ *     refers to (see below for examples)
  * 
  * @author Alex
  */
-
-import java.util.Arrays;
-
 public class RefVsPrim {
 
+	/**
+	 * Demonstrates how reference variables behave based on the data to which
+	 *     they refer.
+	 * @param args An array of command line arguments
+	 */
 	public static void main(String[] args) {
 
 		/* ** References for wrapper classes are affected by auto-boxing ** */
 		
-		int x = 1;
-		System.out.println("x = " + x);
+		System.out.println("References to primitive wrappers");
 		
-		Integer a;
-		a = x;
-		System.out.println("a = " + a);
-		Integer b = a;
-		a++;	//Note: this only affects a because of auto-unboxing
-		System.out.println("a = " + a + " b = " + b);
+		int integerPrimitive = 1;
+		System.out.println("primitive = " + integerPrimitive);
+		
+		Integer integerRefernce1;
+		integerRefernce1 = integerPrimitive;
+		System.out.println("reference1 = " + integerRefernce1);
+		Integer integerReference2 = integerRefernce1;
+		integerRefernce1++;	//Note: this only affects integerRefernce1 because of auto-unboxing
+		System.out.println("reference1 = " + integerRefernce1 + " reference2 = " + integerReference2);
 		
 		/* ** References to immutable data ** */
 		
-		String original = "hello";
-		String copy = original;
-		copy = copy + ", world";
-		System.out.println("Original:\t" + original);
-		System.out.println("Copy:\t" + copy);
+		System.out.println();
+		System.out.println("References to immutable data");
+		
+		String originalReference = "hello";
+		String otherReference = originalReference;
+		otherReference = otherReference + ", world";
+		System.out.println("Original:\t" + originalReference);
+		System.out.println("Other:\t\t" + otherReference);
 		
 		/* ** References to mutable data ** */
+		
+		System.out.println();
+		System.out.println("References to mutable data");
 		
 		int[] array1 = new int[5];
 		int[] array2 = array1;

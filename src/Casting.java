@@ -17,9 +17,12 @@
  * 
  * @author Alex
  */
-
 public class Casting {
 
+	/**
+	 * Demonstrates how Java handles implicit and explicit casting
+	 * @param args An array of command line arguments
+	 */
 	public static void main(String[] args) {
 		
 		/* ** Explicitly down-casting types ** */
