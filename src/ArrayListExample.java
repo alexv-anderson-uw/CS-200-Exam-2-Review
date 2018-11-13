@@ -42,39 +42,6 @@ public class ArrayListExample {
 		}
 	}
 
-	public static void printFilms(ArrayList<String> filmNames, ArrayList<Integer> filmYears) {
-		System.out.println("--------------------------------");
-		System.out.println("FILM DATABASE");
-		System.out.println("--------------------------------");
-		for (int i = 0; i < filmNames.size(); ++i) {
-			System.out.println(filmNames.get(i) + " - " + filmYears.get(i));
-		}
-		System.out.println("--------------------------------");
-	}
-
-	/**
-	 * Remove all films in our records that were made before a given year.
-	 * 
-	 * @param filmNames, a list of all films
-	 * @param filmYears, a list of all film years
-	 * @param year, the year with which we want to filter films
-	 * 
-	 * @return
-	 */
-	public static void removeFilmsBeforeYear(ArrayList<String> filmNames,
-											 ArrayList<Integer> filmDates, int year) {
-
-		int index = 0;
-		while (index < filmNames.size()) {
-			if (filmDates.get(index) < year) {
-				filmNames.remove(index);
-				filmDates.remove(index);
-			} else {
-				index += 1;
-			}
-		}
-	}
-
 	/**
 	 * Removing all elements from ArrayList 
 	 * (without using ArrayList.clear(), or re-assigning reference).
@@ -132,24 +99,6 @@ public class ArrayListExample {
 		return starWarsFilmNames;
 	}
 
-	public static ArrayList<Integer> generateFilmYearsList() {
-
-		ArrayList<Integer> starWarsFilmYears = new ArrayList<Integer>();
-
-		starWarsFilmYears.add(1999);
-		starWarsFilmYears.add(2002);
-		starWarsFilmYears.add(2005);
-		starWarsFilmYears.add(1977);
-		starWarsFilmYears.add(1980);
-		starWarsFilmYears.add(1983);
-		starWarsFilmYears.add(2015);
-		starWarsFilmYears.add(2017);
-		starWarsFilmYears.add(2016);
-		starWarsFilmYears.add(2018);
-
-		return starWarsFilmYears;
-	}
-
 	public static void main(String[] args) {
 
 		/**
@@ -157,6 +106,7 @@ public class ArrayListExample {
 		 * Small examples.
 		 * Which are correct?
 		 */
+		/**/
 		{
 			System.out.println("\n\n --- destroyFilmList1() --- \n\n");
 			ArrayList<String> starWarsFilmNames = generateFilmNamesList();
@@ -166,7 +116,9 @@ public class ArrayListExample {
 			System.out.println("\n+++ After Deletion +++\n");
 			printArrayList(starWarsFilmNames);
 		}
-
+		/**/
+		
+		/**
 		{
 			System.out.println("\n\n --- destroyFilmList2() --- \n\n");
 			ArrayList<String> starWarsFilmNames = generateFilmNamesList();
@@ -176,7 +128,9 @@ public class ArrayListExample {
 			System.out.println("\n+++ After Deletion +++\n");
 			printArrayList(starWarsFilmNames);
 		}
+		/**/
 
+		/**
 		{
 			System.out.println("\n\n --- destroyFilmList3() --- \n\n");
 			ArrayList<String> starWarsFilmNames = generateFilmNamesList();
@@ -186,8 +140,9 @@ public class ArrayListExample {
 			System.out.println("\n+++ After Deletion +++\n");
 			printArrayList(starWarsFilmNames);
 		}
-
+		/**/
 		
+		/**
 		{
 			System.out.println("\n\n --- destroyFilmList4() --- \n\n");
 			ArrayList<String> starWarsFilmNames = generateFilmNamesList();
@@ -197,7 +152,9 @@ public class ArrayListExample {
 			System.out.println("\n+++ After Deletion +++\n");
 			printArrayList(starWarsFilmNames);
 		}
+		/**/
 
+		/**
 		{
 			System.out.println("\n\n --- destroyFilmList5() --- \n\n");
 			ArrayList<String> starWarsFilmNames = generateFilmNamesList();
@@ -207,7 +164,9 @@ public class ArrayListExample {
 			System.out.println("\n+++ After Deletion +++\n");
 			printArrayList(starWarsFilmNames);
 		}
+		/**/
 
+		/**
 		{
 			System.out.println("\n\n --- destroyFilmList6() --- \n\n");
 			ArrayList<String> starWarsFilmNames = generateFilmNamesList();
@@ -217,20 +176,6 @@ public class ArrayListExample {
 			System.out.println("\n+++ After Deletion +++\n");
 			printArrayList(starWarsFilmNames);
 		}
-		
-
-		/**
-		 * Removing from an ArrayList.
-		 * Advanced example.
-		 * Can you write this method?
-		 */
-		{
-			ArrayList<String> starWarsFilmNames = generateFilmNamesList();
-			ArrayList<Integer> starWarsFilmYears = generateFilmYearsList();
-
-			printFilms(starWarsFilmNames, starWarsFilmYears);
-			removeFilmsBeforeYear(starWarsFilmNames, starWarsFilmYears, 2007);
-			printFilms(starWarsFilmNames, starWarsFilmYears);
-		}
+		/**/
 	}
 }

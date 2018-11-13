@@ -1,11 +1,7 @@
 /**
  * Suggestion: Series of statements showing when auto-(un)boxing happens
  * 
-<<<<<<< HEAD
- * @author Nikhil Kumar
-=======
  * @author Nikhil
->>>>>>> 56543e1c5eb6a924ba56c957a67882e4b42f8e04
  */
 import java.util.ArrayList;
 
